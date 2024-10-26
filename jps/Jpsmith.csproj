@@ -13,7 +13,7 @@
     <PackageIcon>logo_white.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
-    <RepositoryUrl></RepositoryUrl>
+    <RepositoryUrl>https://github.com/jackpsmith-git/JPSLibrary</RepositoryUrl>
     <PackageProjectUrl>https://github.com/jackpsmith-git/JPSLibrary</PackageProjectUrl>
     <PackageTags>.NET; C#; Physics; Math; File; Directory; General; Library;</PackageTags>
     <IncludeSymbols>False</IncludeSymbols>
@@ -21,10 +21,16 @@
     <Product>jpsmith-lib</Product>
     <PackageId>jpsmith-lib</PackageId>
     <Company>Jack P Smith</Company>
+    <Version>1.0.1</Version>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\..\..\..\assets\jackpsmith\logos\logo_white.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

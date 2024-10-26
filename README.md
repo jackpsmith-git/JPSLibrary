@@ -41,7 +41,7 @@ JPS.Math.Algorithm.Pathfinding\
 JPS.Math.Algorithm.Pathfinding.AstarNode\
 JPS.Math.Algorithm.Search\
 JPS.Math.Algorithm.Sort\
-JPS.Math.Algorithn.String\
+JPS.Math.Algorithm.String\
 JPS.Math.Random\
 JPS.Math.Physics.Dynamics\
 JPS.Math.Physics.Kinematics\
