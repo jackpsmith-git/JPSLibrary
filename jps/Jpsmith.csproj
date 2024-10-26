@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <SignAssembly>False</SignAssembly>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Jack P Smith .NET Library</Title>
+    <Description>.NET general purpose library created by Jack P Smith.</Description>
+    <Copyright>(c) 2024 Jack P Smith</Copyright>
+    <PackageIcon>logo_white.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageProjectUrl>https://github.com/jackpsmith-git/JPSLibrary</PackageProjectUrl>
+    <PackageTags>.NET; C#; Physics; Math; File; Directory; General; Library;</PackageTags>
+    <IncludeSymbols>False</IncludeSymbols>
+    <Authors>jackpsmith</Authors>
+    <Product>jpsmith-lib</Product>
+    <PackageId>jpsmith-lib</PackageId>
+    <Company>Jack P Smith</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\assets\jackpsmith\logos\logo_white.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
