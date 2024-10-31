@@ -44,10 +44,10 @@ JPS.Math.Algorithm.Search\
 JPS.Math.Algorithm.Sort\
 JPS.Math.Algorithm.String\
 JPS.Math.Random\
-JPS.Math.Physics.Dynamics\
-JPS.Math.Physics.Kinematics\
-JPS.Math.Vector3f\
-JPS.Math.Vector3i\
+JPS.Physics.Dynamics\
+JPS.Physics.Kinematics\
+JPS.Physics.Vector3f\
+JPS.Physics.Vector3i\
 JPS.ResultWithData
 <p>&nbsp</p>
 
