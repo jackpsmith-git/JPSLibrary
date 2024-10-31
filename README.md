@@ -14,7 +14,7 @@ You can find the compiled library in the JPS.dll file at the root of the reposit
 
 The following namespaces are included in the JPS library:
 
-JPS.Application\
+JPS\
 JPS.Data\
 JPS.Data.Cryptography\
 JPS.Data.Encoding\
@@ -35,6 +35,7 @@ JPS.Data.Cryptography.SHA512\
 JPS.Data.Encoding.ASCII\
 JPS.Data.Encoding.UTF8\
 JPS.Data.Serialization.XML\
+JPS.Data.Http\
 JPS.Data.Process\
 JPS.File.Directory\
 JPS.Math.Algorithm.Pathfinding\
@@ -46,7 +47,8 @@ JPS.Math.Random\
 JPS.Math.Physics.Dynamics\
 JPS.Math.Physics.Kinematics\
 JPS.Math.Vector3f\
-JPS.Math.Vector3i
+JPS.Math.Vector3i\
+JPS.ResultWithData
 <p>&nbsp</p>
 
 ## Authors

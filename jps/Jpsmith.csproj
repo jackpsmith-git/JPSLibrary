@@ -21,7 +21,7 @@
     <Product>jpsmith-lib</Product>
     <PackageId>jpsmith-lib</PackageId>
     <Company>Jack P Smith</Company>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 

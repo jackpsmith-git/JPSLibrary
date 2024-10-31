@@ -21,8 +21,15 @@ public static class Kinematics
     /// <param name="Vf">Final velocity (m/s)</param>
     /// <param name="a">Acceleration (m/s^2)</param>
     /// <returns>Time elapsed (s)</returns>
-    public static float t(Vector3f Vi, Vector3f Vf, Vector3f a) => ((Vf - Vi) / a.Magnitude).Magnitude;
+    public static float t(Vector3f Vi, Vector3f Vf, Vector3f a) => ((Vf - Vi) / a.Magnitude()).Magnitude();
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="Vi"></param>
+    /// <param name="a"></param>
+    /// <param name="d"></param>
+    /// <returns></returns>
     public static float Speed(float Vi, float a, float d) => MathF.Sqrt((Vi * Vi) + (2 * a * d));
 
     /// <summary>

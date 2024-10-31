@@ -1,4 +1,4 @@
-﻿namespace Jpsmith.Application;
+﻿namespace Jpsmith;
 
 /// <summary>
 /// Result pattern implementation
