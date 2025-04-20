@@ -1,4 +1,6 @@
-﻿namespace Jpsmith.Physics;
+﻿using Jpsmith.Math;
+
+namespace Jpsmith.Physics;
 
 /// <summary>
 /// Static class containing kinematic functions
@@ -21,7 +23,7 @@ public static class Kinematics
     /// <param name="Vf">Final velocity (m/s)</param>
     /// <param name="a">Acceleration (m/s^2)</param>
     /// <returns>Time elapsed (s)</returns>
-    public static float t(Vector3f Vi, Vector3f Vf, Vector3f a) => ((Vf - Vi) / a.Magnitude()).Magnitude();
+    public static float t(Vector3f Vi, Vector3f Vf, Vector3f a) => ((Vf - Vi) / a.Magnitude).Magnitude;
 
     /// <summary>
     /// 

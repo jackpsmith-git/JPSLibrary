@@ -45,11 +45,38 @@ public static class Directory
     }
 
     /// <summary>
+    /// Deletes all files and directories in the given file path.
+    /// </summary>
+    /// <param name="path">The directory to clear.</param>
+    /// <returns>void</returns>
+    public static void Clear(string path)
+    {
+        DirectoryInfo di = GetDirectoryInfo(path);
+
+        foreach (DirectoryInfo dichild in di.EnumerateDirectories())
+        {
+            Clear(dichild);
+            di.Delete();
+        }
+        foreach (FileInfo fi in di.GetFiles())
+        {
+            fi.Delete();
+        }
+    }
+
+    /// <summary>
     /// Hides the given directory.
     /// </summary>
     /// <param name="di">The directory to hide.</param>
     /// <returns>void</returns>
     public static void Hide(DirectoryInfo di) => di.Attributes = FileAttributes.Hidden;
+
+    /// <summary>
+    /// Hides the given directory.
+    /// </summary>
+    /// <param name="path">The directory to hide.</param>
+    /// <returns>void</returns>
+    public static void Hide(string path) => GetDirectoryInfo(path).Attributes = FileAttributes.Hidden;
 
     /// <summary>
     /// Gets whether the given file path exists.
@@ -64,4 +91,11 @@ public static class Directory
     /// <param name="fa">The file path to check.</param>
     /// <returns>true if the file path is a directory, false if the file path is a file</returns>
     public static bool IsDirectory(FileAttributes fa) => fa.HasFlag(FileAttributes.Directory);
+
+    /// <summary>
+    /// Gets whether the give file path is a directory or a file.
+    /// </summary>
+    /// <param name="path">The file path to check.</param>
+    /// <returns>true if the file path is a directory, false if the file path is a file</returns>
+    public static bool IsDirectory(string path) => GetFileAttributes(path).HasFlag(FileAttributes.Directory);
 }

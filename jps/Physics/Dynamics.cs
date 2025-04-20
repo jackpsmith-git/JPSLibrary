@@ -1,4 +1,6 @@
-﻿namespace Jpsmith.Physics;
+﻿using Jpsmith.Math;
+
+namespace Jpsmith.Physics;
 
 /// <summary>
 /// Static class containing motion functions
@@ -48,7 +50,7 @@ public static class Dynamics
     /// <param name="v">Velocity (m/s)</param>
     /// <param name="r">Radius (m)</param>
     /// <returns>Centripetal acceleration (m/s^2)</returns>
-    public static float CentripetalAcceleration(Vector3f v, float r) => (v.Magnitude() * v.Magnitude()) / r;
+    public static float CentripetalAcceleration(Vector3f v, float r) => (v.Magnitude * v.Magnitude) / r;
 
     /// <summary>
     /// Centripetal Force Formula

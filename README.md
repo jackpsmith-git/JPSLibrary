@@ -22,6 +22,9 @@ JPS.Data.Serialization\
 JPS.File\
 JPS.Math\
 JPS.Math.Algorithm\
+JPS.Math.Coordinates\
+JPS.Math.Logic\
+JPS.Math.Statistics\
 JPS.Math.Physics
 <p>&nbsp</p>
 
@@ -43,11 +46,19 @@ JPS.Math.Algorithm.Pathfinding.AstarNode\
 JPS.Math.Algorithm.Search\
 JPS.Math.Algorithm.Sort\
 JPS.Math.Algorithm.String\
+JPS.Math.Coordinates.Cartesian\
+JPS.Math.Coordinates.Spherical\
+JPS.Math.Logic.Set\
+JPS.Math.Statistics.Population\
+JPS.Math.Statistics.Sample\
+JPS.Math.Statistics.StatisticalSet\
 JPS.Math.Random\
+JPS.Math.Vector2f\
+JPS.Math.Vector2i\
+JPS.Math.Vector3f\
+JPS.Math.Vector3i\
 JPS.Physics.Dynamics\
 JPS.Physics.Kinematics\
-JPS.Physics.Vector3f\
-JPS.Physics.Vector3i\
 JPS.ResultWithData
 <p>&nbsp</p>
 

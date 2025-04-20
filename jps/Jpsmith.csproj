@@ -9,7 +9,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Jack P Smith .NET Library</Title>
     <Description>.NET general purpose library created by Jack P Smith.</Description>
-    <Copyright>(c) 2024 Jack P Smith</Copyright>
+    <Copyright>(c) 2025 Jack P Smith</Copyright>
     <PackageIcon>logo_white.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryType>git</RepositoryType>
@@ -21,7 +21,7 @@
     <Product>jpsmith-lib</Product>
     <PackageId>jpsmith-lib</PackageId>
     <Company>Jack P Smith</Company>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
