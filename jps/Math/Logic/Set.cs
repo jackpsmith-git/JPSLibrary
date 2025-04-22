@@ -98,32 +98,28 @@
         /// <summary>
         /// ⊆
         /// </summary>
-        /// <param name="a">Set A</param>
-        /// <param name="b">Set B</param>
-        /// <returns>Returns true if all elements of <paramref name="a"/> are elements of <paramref name="b"/></returns>
-        public static bool IsSubset(Set<T> a, Set<T> b) => !Enumerable.Except(a.Values, b.Values).Any();
+        /// <param name="set"></param>
+        /// <returns>Returns true if all elements of this set are elements of <paramref name="set"/></returns>
+        public bool IsSubset(Set<T> set) => !Enumerable.Except(Values, set.Values).Any();
 
         /// <summary>
         /// ⊂
         /// </summary>
-        /// <param name="a">Set A</param>
-        /// <param name="b">Set B</param>
-        /// <returns>Returns true if all elements of <paramref name="a"/> are present in <paramref name="b"/>, but not all elements of <paramref name="b"/> are present in <paramref name="a"/></returns>
-        public static bool IsProperSubset(Set<T> a, Set<T> b) => (IsSubset(a, b) && a != b);
+        /// <param name="set"></param>
+        /// <returns>Returns true if all elements of this set are present in <paramref name="set"/>, but not all elements of <paramref name="set"/> are present in this set</returns>
+        public bool IsProperSubset(Set<T> set) => (IsSubset(set) && this != set);
 
         public static bool operator ==(Set<T> a, Set<T> b) => IsSubset(a, b) && IsSubset(b, a);
         public static bool operator !=(Set<T> a, Set<T> b) => !(IsSubset(a, b) && IsSubset(b, a));
-
         public static Set<T> operator +(Set<T> a, Set<T> b) => Union(a, b);
         public static Set<T> operator -(Set<T> a, Set<T> b) => Difference(a, b);
-
         public static Set<(T, T)> operator *(Set<T> a, Set<T> b) => CartesianProduct(a, b);
 
-        public override bool Equals(object obj) => obj == this;
+        public static implicit operator IEnumerable<T>(Set<T> set) => set.Values;
+        public static explicit operator Set<T>(IEnumerable<T> values) => new Set<T>(values);
 
-        public override int GetHashCode()
-        {
-            return N;
-        }
+        public override bool Equals(object obj) => obj == this;
+        public override int GetHashCode() => N;
+        public override string ToString() => $"{Values}";
     }
 }
